@@ -10,7 +10,7 @@ operator:
   image: ghcr.io/netcracker/qubership-cassandra-operator:main
   initImage: ghcr.io/netcracker/qubership-credential-manager:main
   podName: cassandra-operator
-# priorityClassName:
+  priorityClassName:
   resources:
     requests:
       cpu: 50m
@@ -49,7 +49,7 @@ securityContext:
   fsGroup: 999
   runAsUser: 999
   runAsGroup: 1001
-# supplementalGroups:
+  supplementalGroups:
 
 # Specifies image pull policy
 imagePullPolicy: IfNotPresent
