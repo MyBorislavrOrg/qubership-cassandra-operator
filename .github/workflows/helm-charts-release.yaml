@@ -30,4 +30,4 @@ jobs:
       docker-config-file: ".github/build-config.cfg"
       helm-charts-config-file: ".github/helm-charts-release-config.yaml"
       max-parallel: 4
-    secrets: inherit
+    secrets: inherit # zizmor: ignore[secrets-inherit]
